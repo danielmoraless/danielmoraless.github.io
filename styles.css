@@ -1,49 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
-	--bg-principal: whitesmoke;
-	--elementos: #161718;
+	--primary-color: #f8f8ff;
+	--secondary-color: #0a0a0a;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
-	background-color: whitesmoke;
-	font-family: 'Anonymous Pro', sans-serif;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	font-family: 'Lora', sans-serif;
 }
 
-.centro {
-	transition: 0.3s;
-	position: fixed;
-	width: 50%;
-	height: 50%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.mapa {
+	overflow: hidden;
+	position: relative;
+	background-color: var(--secondary-color);
+}
+
+.mapa #enlaces {
+	display: none;
+}
+
+.mapa a {
+  color: var(--primary-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.logo {
 	text-align: center;
-	color: #363533;
-	border: 0.50px solid currentcolor;
-	background-color: var(--bg-principal);
-	box-shadow: 10px 10px #363533;
 }
 
-.centro:hover {
-	transition: 0.4s;
-	transform: scale(0.999) translate(-50%, -50%);
-	color: var(--elementos);
-	box-shadow: none;
-	border: 1.8x solid currentcolor;
-	border-radius: 5px;
+.mapa a.icon {
+  background: var(--secondary-color);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-block: 5px;
 }
 
-.centro h2 {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #b0b0b0;
+	margin: 6px;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }
