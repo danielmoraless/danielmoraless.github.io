@@ -3,6 +3,7 @@
 :root {
 	--primary-color: #f8f8ff;
 	--secondary-color: #0a0a0a;
+	--third-color: #818181;
 }
 
 * {
@@ -16,20 +17,61 @@ body {
 	font-family: 'Lora', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
+.spanel {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: var(--secondary-color);
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.8s;
+	opacity: 0.97;
+}
+
+.spanel a {
+	padding: 8px 8px 8px 32px;
+	font-size: 25px;
+	color: var(--third-color);
+	display: block;
+	transition: 0.3s;
+}
+
+.spanel .enlaces {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	margin: 0;
+}
+
+.spanel a:hover {
+	color: var(--primary-color);
+}
+
+.spanel .close {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 37px;
+	margin-left: 50px;
+}
+
 .mapa {
 	overflow: hidden;
 	position: relative;
 	background-color: var(--secondary-color);
 }
 
-.mapa #enlaces {
-	display: none;
-}
-
 .mapa a {
   color: var(--primary-color);
   padding: 5px 16px;
-  text-decoration: none;
   font-size: 17px;
   display: block;
 }
@@ -40,12 +82,15 @@ body {
 
 .mapa a.icon {
   background: var(--secondary-color);
-  display: block;
   position: absolute;
   right: 0;
   top: 0;
-  margin-block: 5px;
-  font-size: 19px;
+  font-size: 20px;
+  padding: 0.5rem 0.8rem;
+}
+
+.mapa a.activo {
+	cursor: default;
 }
 
 
