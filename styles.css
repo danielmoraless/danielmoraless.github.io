@@ -21,6 +21,10 @@ a {
 	text-decoration: none;
 }
 
+.navbar {
+	display: none;
+}
+
 .spanel {
 	height: 100%;
 	width: 0;
@@ -63,6 +67,8 @@ a {
 	margin-left: 50px;
 }
 
+
+/* Navbar mobile */
 .mapa {
 	overflow: hidden;
 	position: relative;
@@ -78,6 +84,7 @@ a {
 
 .logo {
 	text-align: center;
+	cursor: default;
 }
 
 .mapa a.icon {
@@ -89,12 +96,45 @@ a {
   padding: 0.5rem 0.8rem;
 }
 
-.mapa a.activo {
-	cursor: default;
+/* Styles for other screens  */
+@media (min-width: 413px) {
+	.mapa {
+		display: none;
+	}
+
+	.navbar {
+		background-color: var(--secondary-color);
+		overflow: hidden;
+		display: list-item;
+	}
+
+	.navbar .e a {
+		float: left;
+		color: var(--third-color);
+		text-align: center;
+		padding: 14px 16px;
+		font-size: 17px;
+	}
+
+	.navbar .e a:hover {
+		color: var(--primary-color);
+	}
+
+	.navbar a.active {
+		color: var(--primary-color);
+		background-color: var(--third-color);
+	}
+
+	.navbar .l {
+		color: var(--primary-color);
+		text-align: center;
+		float: right;
+		padding: 7px 8px;
+		cursor: default;
+	}
 }
 
-
-
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
