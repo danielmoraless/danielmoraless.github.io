@@ -22,7 +22,7 @@ locale: es
 title: "Daniel Morales"
 description: "Tecnología, Ciencias Computacionales y más."
 baseurl: # the subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://danielmoraless.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: /images/logo.png # path of site logo, e.g. "/images/logo.png"
 date_format: "%d-%m-%Y"
 read_time: true
