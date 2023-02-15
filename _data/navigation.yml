@@ -1,0 +1,10 @@
+# Sample site navigation bar links
+
+- title: Inicio
+  url: /
+- title: Sobre mi
+  url: /about/
+- title: Blog
+  url: /blog/
+- title: Buscar
+  url: /search/

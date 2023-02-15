@@ -1,0 +1,13 @@
+# Sample Authors
+# Remove file or replace with your own
+
+Daniel Morales:
+  name: Daniel H. Morales J.
+  picture: /images/author-photo.jpg
+  links:
+    - title: Instagram
+      url: https://instagram.com/moralsdanii
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/danielmoraless
+      icon: fab fa-github-square
