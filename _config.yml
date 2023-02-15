@@ -38,7 +38,7 @@ disqus:
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 head_scripts:
-  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Liquid
 liquid:
