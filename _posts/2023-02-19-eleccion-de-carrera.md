@@ -1,8 +1,8 @@
 ---
 title: Elección de carrera
 author: Daniel Morales
-last_modified_at: 23-02-19T15:45:58
-excerpt: ¿Todavía no te has decidido por una carrera universitaria? ¿No sabes cuál es tu talento? Yo me he incontrado un libro con un capítulo que nos ayudará. Aquí expongo mi punto de vista y ofrezco algunas recomendaciones propias y parafraseadas.
+last_modified_at: 23-02-19T16:06:32
+excerpt: ¿Todavía no te has decidido por una carrera universitaria? ¿No sabes cuál es tu talento? Yo me he encontrado un libro con un capítulo que nos ayudará. Aquí expongo mi punto de vista y ofrezco algunas recomendaciones propias y parafraseadas.
 categories:
     - Filosofía
 tags:
