@@ -1,0 +1,28 @@
+---
+import NavBar from '../components/NavBar.astro';
+
+const { title } = Astro.props;
+
+const backgroundColor = "#000";
+const primaryColor = "#8b0000";
+const secondaryColor = "#eeeeee";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavBar />
+    <slot />
+  </body>
+</html>
+<style is:global define:vars={{backgroundColor, primaryColor, secondaryColor}}>
+  body {
+    background-color: var(--backgroundColor);
+    color: var(--secondaryColor);
+  }
+</style>
